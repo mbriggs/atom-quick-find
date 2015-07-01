@@ -6,6 +6,7 @@
     "strict": 0,
     "no-use-before-define": 0,
     "no-empty-class": 0,
+    "no-trailing-spaces": 0,
     "curly": [2, "multi"],
     "no-shadow": 0,
     "no-unused-vars": [2, {
@@ -46,9 +47,12 @@
 
   "globals": {
     "atom": false,
+    "jasmine": false,
     "it": false,
     "describe": false,
     "beforeEach": false,
-    "expect": false
+    "expect": false,
+    "waitsForPromise": false,
+    "runs": false
   }
 }
