@@ -51,4 +51,20 @@ describe("Quick Find", () => {
       expect(panel).not.toBeVisible();
     });
   });
+
+  it('can be reshown', () => {
+    atom.commands.dispatch(workspace, 'quick-find:find');
+
+    waitsForPromise(() => activation);
+
+    runs(() => {
+      let panel = workspace.querySelector('.quick-find-panel');
+      atom.commands.dispatch(panel, 'quick-find:dismiss');
+      atom.commands.dispatch(workspace, 'quick-find:find');
+
+      expect(panel).toBeVisible();
+      expect(workspace.querySelectorAll('.quick-find-panel').length).toBe(1);
+    });
+
+  });
 });
