@@ -45,6 +45,10 @@
   },
 
   "globals": {
-    "atom": false
+    "atom": false,
+    "it": false,
+    "describe": false,
+    "beforeEach": false,
+    "expect": false
   }
 }
