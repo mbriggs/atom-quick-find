@@ -65,6 +65,5 @@ describe("Quick Find", () => {
       expect(panel).toBeVisible();
       expect(workspace.querySelectorAll('.quick-find-panel').length).toBe(1);
     });
-
   });
 });
