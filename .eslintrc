@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+
+  "rules": {
+    "quotes": 0,
+    "strict": 0,
+    "no-use-before-define": 0,
+    "no-empty-class": 0,
+    "curly": [2, "multi"],
+    "no-shadow": 0,
+    "no-unused-vars": [2, {
+        "vars": "local",
+        "args": "after-used"
+      }]
+  },
+
+
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "restParams": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true
+  },
+
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true
+  }
+}
